@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript</title>
+</head>
+
+<body>
+    
+    <script>
+        // console.log("Hello World!");
+        // console.log(3);
+        // console.log(true);
+        // console.log("true");
+        // let nome = "Front-Enzo";
+        // let idade = 23;
+        // console.log(nome);
+        // console.log(idade);
+        // idade = idade+1;
+        // console.log(idade);
+        // nome = nome+0.2;
+        // console.log(nome);
+        // console.log(0.1+0.2);
+        // console.log(0.1-0.2);
+        // console.log(4/2);
+        // console.log(3*7);
+        // console.log(3**2);
+        // console.log(10%3);
+        // let minhavariavel = null;
+        // console.log(true || false);
+
+        // let nome;
+        // nome = "Teste"
+        // console.log(nome);
+        // alert(nome);
+
+        // let primeironumero
+        // let segundonumero
+        // primeironumero = prompt("Digite o primeiro número")
+        // segundonumero = prompt("Digite o segundo número")
+        // if (primeironumero%segundonumero == 0) {
+        //     alert("O primeiro número é divisível pelo segundo")
+        // } else {
+        //     alert("O primeiro número não é divisível pelo segundo")
+        // }
+
+        // if (aprovado) {
+        //     alert("Você está aprovado")
+        // } else {
+        //     alert("Você está reprovado")
+        // }
+
+        // let aprovado = media >= 7;
+        // let recuperacao = media >= 6;
+
+        // aprovado?alert("Você está aprovado"):recuperacao?alert("Você está na recuperação"):alert("Você está reprovado")
+
+
+        // let nota1 = Number(prompt("Digite a primeira nota"))
+        // let nota2 = Number(prompt("Digite a segunda nota"))
+        // let nota3 = Number(prompt("Digite a terceira nota"))
+        // let media = (nota1+nota2+nota3)/3
+        // alert("Sua média é "+media);
+        // let status;
+        // media>=7?status="aprovado":media>=6?status="recuperacao":status="reprovado"
+
+        // switch (status) {
+        //     case "aprovado":
+        //         alert("Você foi aprovado");
+        //         break;
+        //     case "recuperacao":
+        //         alert("Você está de recuperação");
+        //         break;
+        //     case "reprovado":
+        //         alert("Você está reprovado");
+        //         break;
+        //     default:
+        //         alert("Tendi nada");
+        //         break;
+        // }
+
+        let quantasnotas=Number(prompt("Quantas notas você quer digitar?")), somadasnotas=0
+        for (let enzo = 1; enzo <= quantasnotas; enzo++) somadasnotas+=Number(prompt("Qual a "+enzo+" nota?"))
+        alert("A média das "+quantasnotas+" é: "+somadasnotas/quantasnotas)
+
+    </script>
+</body>
+
+</html>
