@@ -46,7 +46,8 @@
         let anotacao = {
             titulo: "Minha anotação",
             descricao: "Descrição da minha anotação",
-            data: "07/10/2026"
+            data: "07/10/2026",
+            preco: 150
         }
         console.log(anotacao);
         // alert(anotacao['data'])
@@ -57,22 +58,26 @@
             {
                 titulo: "Aula de amanhã",
                 descricao: "Reclamar do Enzo e lembrar de não passar perfume na sala",
-                data: "08/10/2026"
+                data: "08/10/2026",
+                preco: 50
             },
             {
                 titulo: "Aula de sexta feira",
                 descricao: "Pegar carona pra ir pro Tech Summit",
-                data: "09/10/2026"
+                data: "09/10/2026",
+                preco: 80
             },
             {
                 titulo: "Aula de quarta feira",
                 descricao: "Estudar",
-                data: "14/10/2026"
+                data: "14/10/2026",
+                preco: 100
             },
             {
                 titulo: "Aula de quinta feira",
                 descricao: "Exercício",
-                data: "15/10/2026"
+                data: "15/10/2026",
+                preco: 20
             }
         ]
         console.log(livro_de_anotacoes[1].descricao);
@@ -81,7 +86,8 @@
         let nova_anotacao = {
             titulo: "Aula de terça-feira",
             descricao: "Ainda nem sei o que vou ensinar",
-            data: "13/10/2026"
+            data: "13/10/2026",
+            preco: 75
         }
         // livro_de_anotacoes[livro_de_anotacoes.length]=nova_anotacao
         // livro_de_anotacoes.pop()
@@ -97,7 +103,17 @@
         // }
         livro_de_anotacoes.forEach(minha_funcao)
 
-  
+        let outra_funcao = function caros(objeto) {
+            return objeto.preco > 50
+        }
+
+        console.log(livro_de_anotacoes.filter(outra_funcao));
+
+        // let mais_uma_funcao = function pagarmeia(anotacao){
+        //     return anotacao.preco/2
+        // }
+
+        console.log(livro_de_anotacoes.map( anotacao => anotacao.preco/2 ))
         
         
     </script>
