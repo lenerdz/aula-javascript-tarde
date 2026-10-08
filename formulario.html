@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        #formwindow {
+            background-color: bisque;
+            padding: 5px;
+            width: 200px;
+
+            input {
+                margin: 5px
+            }
+        }
+
+        .card-perfil {
+            background-color: pink;
+            padding: 5px;
+            text-align: center;
+            width: 80px;
+            img {
+                margin: 5px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formwindow">
+        <form action="#" method="post">
+            <input type="text" name="" id="nome" placeholder="Nome do Aluno">
+            <input type="number" name="" id="idade" placeholder="Idade do Aluno">
+            <input type="text" name="" id="curso" placeholder="Curso do Aluno">
+            <input type="text" name="" id="turno" placeholder="Turno do curso">
+            <input type="submit" value="Salvar" id="enviar">
+        </form>
+    </div>
+    <script>
+        let textonome = document.querySelector("#nome")
+        let textoidade = document.querySelector("#idade")
+        let textocurso = document.querySelector("#curso")
+        let textoturno = document.querySelector("#turno")
+        let botaoenviar = document.querySelector("#enviar")
+        let lista_de_alunos = []
+
+
+        botaoenviar.addEventListener("click", jasvdhjadhvajsdvghasd => {
+            jasvdhjadhvajsdvghasd.preventDefault();
+            let novoaluno = {
+                nome: textonome.value,
+                idade: Number(textoidade.value),
+                curso: textocurso.value,
+                turno: textoturno.value
+            }
+            lista_de_alunos.push(novoaluno)
+            console.log(lista_de_alunos);
+
+            let perfil = document.createElement("div")
+            perfil.classList.add("card-perfil")
+            let img = document.createElement("img")
+            img.src = "https://placehold.co/50"
+            perfil.append(img)
+            let p = document.createElement("p")
+            p.textContent = textonome.value
+            perfil.append(p)
+            document.querySelector("body").append(perfil)
+        })
+    </script>
+</body>
+
+</html>
